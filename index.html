@@ -7,23 +7,51 @@
     <title>Homework9</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"/>
     
-    <script type="module" crossorigin src="/goit-js-hw-09/commonHelpers3.js"></script>
+    <script type="module" crossorigin src="/goit-js-hw-09/assets/modulepreload-polyfill-3cfb730f.js"></script>
+    <script type="module" crossorigin src="/goit-js-hw-09/assets/1-gallery-26d0d5a0.js"></script>
+    <script type="module" crossorigin src="/goit-js-hw-09/assets/2-form-4ed993c7.js"></script>
     <link rel="stylesheet" href="/goit-js-hw-09/assets/index-10c40100.css">
   </head>
   <body>
-    
-    <li class="gallery-item">
-      <a class="gallery-link" href="large-image.jpg">
-        <img 
-          class="gallery-image" 
-          src="small-image.jpg" 
-          alt="Image description" 
-          />
-      </a>
-    </li>
+    <header></header>
+    <main>
+      <h1 hidden="">Gallery and Form for you</h1>
+      <li class="gallery-item">
+        <a class="gallery-link" href="large-image.jpg">
+          <img 
+            class="gallery-image" 
+            src="small-image.jpg" 
+            alt="Image description" 
+            />
+        </a>
+      </li>
+      
+             <section>
+      <ul class="gallery">
+        <li class="gallery-item">
+          <a class="gallery-link" href="large-image.jpg">
+            <img
+              class="gallery-image"
+              src="small-image.jpg"
+              data-source="large-image.jpg"
+              alt="Image description"/>
+          </a>
+        </li>
+     </section>
+     
   
 
-    
-    
+             <section>
+      <h1>Welcome to page Form</h1>
+     </section>
+     
+     
+
+
+     
+    </main>
+    <footer></footer>
+  
+   
   </body>
 </html>
