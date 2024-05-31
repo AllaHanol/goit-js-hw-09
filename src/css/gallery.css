@@ -1,0 +1,53 @@
+
+import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
+
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  height: auto;
+  max-width: 510px;
+  max-height: 310px;
+}
+
+/* body{
+  display: flex;
+  justify-content: center;
+} */
+.gallery {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+padding-top: 24px;
+padding-bottom: 24px;
+    
+}
+.gallery-item {
+    width: 360px;
+    height: 200px;
+}
+.gallery-item:hover img {
+transform: scale(1.04);
+}
+  
+.gallery-link{
+    display: inline-block;
+    cursor: url(../img/bxs_hand-down.png),auto;
+}
+.gallery-image{
+    display: block;
+    width: 360px;
+    height: 200px;
+    transform: scale(1);
+    transition: transform 0.5s;
+}

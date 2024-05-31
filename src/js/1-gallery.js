@@ -71,7 +71,6 @@ const images = [
       <img
         class="gallery-image"
         src="${preview}"
-        data-source="${original}"
         alt="${description}"
       />
     </a>
@@ -86,7 +85,7 @@ const images = [
   ulElem.addEventListener("click", (e) => {
     e.preventDefault();
     if (e.target === e.currentTarget) return;
-    const instance = basicLightbox.create(`
+    const instance = simplelightbox.create(`
       <div class="modal">
   <img
         class="gallery-image-modal"
@@ -97,7 +96,7 @@ const images = [
   `);
   
     instance.show();
-    document.querySelector(".basicLightbox").style.backgroundColor = "#2E2F42CC";
+    document.querySelector(".simplelightbox").style.backgroundColor = "#2E2F42CC";
   
     const modalElem = document.querySelector(".modal");
     modalElem.addEventListener("click", () => {
