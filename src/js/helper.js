@@ -1,3 +1,4 @@
+
 export function saveToLS(key,value){
     const json = json.stringify(value);
     localStorage.setItem(key, jsonData);
