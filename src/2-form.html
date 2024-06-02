@@ -1,17 +1,49 @@
-     <section>
-      <form class="feedback-form" autocomplete="off">
-        <label>
-          Email
-          <input type="email" name="email" autofocus />
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="8"></textarea>
-        </label>
-        <button type="submit">Submit</button>
-      </form>
-      
-     </section>
-     <script type="module" src="./js/2-form.js"></script>
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Form</title>
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+      <link rel="stylesheet" href="./css/styles.css" />
+     </head>
+     <body>
+      <header></header>
+      <main>
+        <section>
+          <div class="container">
+            <form class="feedback-form" autocomplete="off">
+              <label>
+                Email
+                <input type="email" name="email" autofocus />
+              </label>
+              <label>
+                Message
+                <textarea name="message" rows="8"></textarea>
+              </label>
+              <button class="btn-blue" type="submit">Submit</button>
+            </form>
+          </div>  
+         </section>
+      </main>
+      <footer></footer>
+      <script type="module" src="./js/2-form.js"></script>
+     </body>
+     </html>
+    
      
 
+     <!-- <form class="login-form">
+      <label>
+        Email
+        <input type="email" name="email" />
+      </label>
+      <label>
+        Password
+        <input type="password" name="password" />
+      </label>
+      <button type="submit">Log in</button>
+    </form> -->

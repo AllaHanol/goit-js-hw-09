@@ -1,0 +1,41 @@
+form {
+    border-radius: 8px;
+    padding: 24px;
+    width: 408px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+  input {
+    font-size: 16px;
+    line-height: 1.5;
+    height: 40px;
+  }
+  input:active{
+    border-color: black;
+  }
+  button {
+    width: fit-content;
+    margin-top: 8px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+  } 
+  .btn-blue {
+    background-color: #4E75FF;
+    transition: background-color 250ms ease;
+    color: #fff;
+  }
+  .btn-blue:hover, .btn-blue:focus{
+    background-color: #6C8CFF;
+
+  }
