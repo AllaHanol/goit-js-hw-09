@@ -13,22 +13,27 @@ label {
     flex-direction: column;
     gap: 8px;
 }
-  input {
-    font-size: 16px;
-    line-height: 1.5;
-    height: 40px;
-    border: 1px solid #808080;
-    border-radius: 4px;
-    background-color: transparent;
-  }
-  input:hover{
-    border-color: #2E2F42;
-  }
-  textarea{
-    border-radius: 4px;
-    background-color: transparent;
-    resize: none;
-  }
+.feedback-form input,
+textarea {
+  width: 360px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  transition: border-color 500ms;
+}
+
+.feedback-form textarea {
+  resize: none;
+  height: 80px;
+}
+.feedback-form input:hover,
+textarea:hover {
+  border: 1px solid #000000;
+}
+.feedback-form input:focus,
+textarea:focus {
+  border-color: #808080;
+  outline: none;
+}
   button {
     width: fit-content;
     margin-top: 8px;
@@ -48,3 +53,5 @@ label {
     background-color: #6C8CFF;
 
   }
+
+
