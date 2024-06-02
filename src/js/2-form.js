@@ -6,24 +6,37 @@ const formData = {
   message: '',
 };
 
-const logInForm = document.querySelector('.feedback-form');
-logInForm.addEventListener('submit', handleSubmit);
-function handleSubmit(event) {
-    event.preventDefault();
-    const form = event.target;
-    const email = form.elements.email.value.trim();
-    const message = form.elements.message.value.trim();
-    
-    if (email === '' || message === '') {
-        alert('Fill please all fields');
+  const form = document.querySelector('.feedback-form');
+  const emailInputElem = form.querySelector("input[name='email']");
+  const messageInputElem = form.querySelector("textarea[name = 'message']");
+  const storageKey = 'feedback-form-state';
+  const savedFormData = loadFromLS(storageKey);
+  
+  if (savedFormData) {
+    formData.email = savedFormData.email;
+    formData.message = savedFormData.message;
+  }
+  
+  emailInputElem.value = formData.email;
+  messageInputElem.value = formData.message;
+  
+  form.addEventListener('input', e => {
+    formData[e.target.name] = e.target.value.trim();
+    saveToLS(storageKey, formData);
+  });
+  
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    if (emailInputElem.value && messageInputElem.value) {
+      console.log(formData);
+      localStorage.removeItem(storageKey);
+      form.reset();
     } else {
-        console.log({ email, message });
-        form.reset();
+      alert('Fill please all fields');
     }
-}
-
-saveToLS();
-loadFromLS();
+  });
+  
+ 
 
 // шаблон з ДЗ09
 // {/* <form class="feedback-form" autocomplete="off">

@@ -1,6 +1,6 @@
 
 export function saveToLS(key,value){
-    const json = json.stringify(value);
+    const jsonData = json.stringify(value);
     localStorage.setItem(key, jsonData);
 }
 export function loadFromLS(key){
@@ -13,3 +13,5 @@ export function loadFromLS(key){
         return json;
     }
 }
+
+  

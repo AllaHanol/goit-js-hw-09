@@ -3,6 +3,7 @@ form {
     padding: 24px;
     width: 408px;
     background-color: #fff;
+    color: #2E2F42;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -16,10 +17,17 @@ label {
     font-size: 16px;
     line-height: 1.5;
     height: 40px;
-    border-color: #808080;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    background-color: transparent;
   }
   input:hover{
     border-color: #2E2F42;
+  }
+  textarea{
+    border-radius: 4px;
+    background-color: transparent;
+    resize: none;
   }
   button {
     width: fit-content;
