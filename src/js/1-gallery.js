@@ -22,12 +22,12 @@ const ulElem = document.querySelector(".gallery");
     return arr.map(imageTemplate).join("");
   }
   ulElem.innerHTML = imagesTemplate(images);
-  ulElem.addEventListener("click", (e) => {
-    e.preventDefault();
-    if (e.target === e.currentTarget) return;
+  // ulElem.addEventListener("click", (e) => {
+  //   e.preventDefault();
+    // if (e.target === e.currentTarget) return;
     const options = {
         captionDelay: 250,  
     }
     const lightbox = new simpleLightbox('.gallery a', options);
-    
-  });
+  
+ 

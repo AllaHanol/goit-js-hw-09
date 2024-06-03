@@ -1,6 +1,6 @@
 
 export function saveToLS(key,value){
-    const jsonData = json.stringify(value);
+    const jsonData = JSON.stringify(value);
     localStorage.setItem(key, jsonData);
 }
 export function loadFromLS(key){
